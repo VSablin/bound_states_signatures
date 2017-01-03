@@ -27,28 +27,23 @@
 \author{J. J. Garc\'ia-Ripoll}
 \affiliation{Instituto de Fisica Fundamental, IFF-CSIC, Calle Serrano 113b, Madrid E-28006}
 \begin{abstract}
-In this work we study the spontaneous decay of an impurity coupled to a linear array of bosonic cavities forming a single band waveguide. The frequency of the emitted photon is different from the resonance single-photon scattering frequency, which perfectly matches the bare frequency of the impurity. This breaks down the typical analogy between spontaneous emission and scattering. We study how the position of the impurity energy with respect to the photonic band influences the profile in position space of the emitted photon. In addition, the impurity follows a rich dynamics: in the beginning it shows an exponential decay, followed by  a power-law tail and finally it achieves an oscillatory stationary regime. The parameters needed to see these effects are within the state-of-the-art of several quantum technologies.
+In this work we study the spontaneous decay of an impurity coupled to a linear array of bosonic cavities forming a single-band waveguide. The frequency of the emitted photon is different from the single-photon scattering resonance frequency, which perfectly matches the bare frequency of the impurity. This breaks down the correspondence between spontaneous emission and scattering. We study how the position of the impurity energy with respect to the photonic band influences the profile in position space of the emitted photon. In addition, the impurity presents a rich dynamics: it shows an exponential decay up to intermediate times, followed by a power-law tail in the long-time regime and finally reaches an oscillatory stationary regime.
 \end{abstract}
 
 \maketitle
 
 \section{Introduction}
 
+Interaction between few-level systems or quantum impurities and photonic media with nonlinear dispersion relations and band gaps gives rise to a plethora of interesting phenomena \cite{Lambropoulos2000}. Examples are the modification of the level structure of the impurity \cite{John1990,John1991,Ripoll2015}, non-trivial dynamics \cite{Khalfin1958,Fonda1978,Hack1982,John1994,Gaveau1995,Garmon2013,Redchenko2014} and charge transfer enhancement \cite{Tanaka2006}. %
+Perhaps one of the most striking phenomena in these systems is the appearance of bound states\ \cite{John1984,John1987} where a photonic excitation is confined to the vicinity of the impurity. This idea has been studied in various theoretical works, finding phenomena such as decoherence suppression \cite{Tong2010a}, preservation of quantum correlations \cite{Tong2010b,Yang2013,Lu2013} or existence of multi-photon bound states\ \cite{Cirac2015,Calajo2016}. Recent experiments have shown that it is possible to engineer and spectroscopycally probe bound states at the single-photon level, using cavity arrays and transmon qubits for the photonic medium and the quantum impurity, respectively\ \cite{liu2016}.
 
 
-Interaction between few level systems or quantum impurities and photonic media with nonlinear dispersion relations and band gaps implies a plethora of interesting phenomena \cite{Lambropoulos2000}, e.g., modification of the level structure of the impurity \cite{John1990,John1991,Ripoll2015}, non-trivial dynamics \cite{John1994,Gaveau1995,Redchenko2014} or charge transfer enhancement \cite{Tanaka2006}. %
-Perhaps one of the most striking phenomena in photonic systems with bandgaps and quantum impurities is the appearance of bound states\ \cite{John1984,John1987} where a photonic excitation is confined to the vicinity of the impurity. This idea has been studied in various theoretical works, with a particular focus on multi-photon bound states\ \cite{Rabl2015,Cirac2015}. However, recent experiments have shown that already at the single-photon level it is possible to engineer and spectroscopycally probe bound states, using cavity arrays and transmon qubits for the photonic medium and the quantum impurity, respectively\ \cite{liu2016}.
+The purpose of this paper is to study the decay of a quantum impurity embedded in a photonic reservoir with a band gap. This is a problem than can nowadays be realized in a number of state-of the-art quantum technologies, such as 
+photonic crystals \cite{Arcari2014,Sollner2015,Lodahl2015}, superconducting circuit architectures \cite{liu2016,Astafiev2010,Hoi2011,Hoi2013,VanLoo2013,Hoi2013b}, or cold atoms\ \cite{goban2015,thompson2013}. 
+More precisely, we consider a waveguide-QED scenario, where the medium is a one-dimensional array of coupled bosonic cavities with tight-binding interaction. This model gives a cosine-shaped dispersion relation for propagating photons and bound states around the impurity. These bounds states do not influence the scattering properties of a {\it single} photon, but they show up in two-photon scattering \cite{Longo2010,Longo2011}.  Bound states also affect the decay of the excited state in the impurity, as discussed in \cite{Garmon2013} when the excitation energy is close to the lower part of the band and in \cite{Lombardo2014} when the excitation energy is the middle of the band. Here we consider an arbitrary excitation energy and analyze the dynamics of the problem. We find that, generally, the energy of the emitted photon is shifted with respect to the energy of the impurity. We study the profile of the emitted photon in position space depending on the energy of the impurity with respect to the band. Additionally, we find that the impurity decay presents a complex time evolution, comprising exponential, power law and oscillatory regimes. As we will show, these phenomena present signatures of the bound states and the density of states. 
 
-
-The purpose of this paper is to study the decay of a quantum impurity embedded in a photonic reservoir with a certain band gap. The medium is a one-dimensional array of coupled bosonic cavities with tight-binding interaction, so we are considering decay in a waveguide-QED scenario. This model gives a cosine-shaped dispersion relation. The influence of the bound states in this system has already been considered in two-photon scattering \cite{Longo2010,Longo2011} or even in the decay of the impurity, but just when its energy is in the middle of the band \cite{Lombardo2014}. We show that the energy of the emitted photon has an energy shift with respect to the energy of the impurity. We see that the impurity decays with some power-law after the initial exponential decay. Both phenomena show signatures of the bound states and the density of states. Lastly, we will study the profile in position space of the emitted field.  
-Our calculations are certainly important for  characterizing single photon emitters embedded in photonic mediums.
-All the phenomenology presented here, can be observed 
- within the state-of-the-art of different quantum technologies, such as photonic crystals \cite{Arcari2014,Sollner2015,Lodahl2015}, superconducting circuit architectures \cite{liu2016,Astafiev2010,Hoi2011,Hoi2013,VanLoo2013,Hoi2013b}, or cold atoms\ \cite{goban2015,thompson2013}. 
-
-
-
-The manuscript is organized as follows. First, we introduce the Hamiltonian and its spectrum in the single-excitation subspace.  In section \ref{sec:scatt} we briefly review the single-photon scattering. In section \ref{sec:spontaneous_decay}, we discuss the main results of the paper. First, we show that an excited impurity emits a photon with a frequency shift depending both on the coupling constant and the energy of the impurity with respect to the photonic band.  Then, we study the field distribution of the emitted photon in position space. Finally,  we characterize the spontaneous emission, which shows an exponential decay followed by a a power-law tail and finally it achieves an oscillatory stationary regime.
-We end up with the conclusions. Some technical details are sent to the appendices.
+The manuscript is organized as follows. First, we introduce the Hamiltonian and its spectrum in the single-excitation subspace.  In section \ref{sec:scatt} we briefly review the single-photon scattering. In section \ref{sec:spontaneous_decay}, we discuss the main results of the paper. First, we present the already mentioned frequency shift of the emitted photon as a function of the coupling constant and the energy of the impurity. Then, we study the field distribution of the emitted photon in position space. We next characterize the spontaneous emission of the impurity.
+We end up with the conclusions. Some technical details are described in the appendices.
 
 
 %%%%%%%%%%%%%%%%%%
@@ -58,7 +53,7 @@ We end up with the conclusions. Some technical details are sent to the appendice
 %%%%%%%%%%%%%%%%%%
 \section{Model}
 
-The photonic medium is represented as a chain of $L$ discrete bosonic sites (we take $L\to\infty$ althrough the paper) coupled to some impurity living at site $x_0=0$. 
+The photonic medium is represented as a chain of $L$ discrete bosonic sites (we take $L\to\infty$ throughout the paper) coupled to some impurity living at site $x_0=0$. 
 The Hamiltonian of the combined system is ($\hbar =1$):
 \begin{align}
 \label{eq:H} H   = \; &  
@@ -68,12 +63,12 @@ The Hamiltonian of the combined system is ($\hbar =1$):
 &  + g ( b^\dagger \,  a_0 +   a_0^\dagger \, b) \, ,
 \end{align}
 where $a_{x}$ and $a_{x}^\dagger$  annihilate and create, respectively, a photon at position $x$ and $b$ and $b^\dagger$ annihilate and create excitations at the impurity,
- which can be a two-level system another, resonator, etc. 
-$\Delta$ is the energy of the impurity.  
-The band of free photons is defined by a dispersion relation depending on both the on-site photon energy $\epsilon$ and the hopping parameter $J$:  $\omega_k = \epsilon  - 2 J \cos k$, being $k$ the momentum and $\omega_k$ the corresponding energy. The momentum $k$ lies into $[-\pi/d,\pi/d)$, with $d$ the lattice spacing. We take $d=1$. The group velocity is $v_k:=d\omega_k/dk=2J\sin k$. 
-The interaction Hamiltonian between the impurity and the cavities, the last term in Eq. \eqref{eq:H}, is given by the celebrated Jaynes-Cummings model, being $g$ the coupling constant.
-Importantly, our Hamiltonian commutes with the number operator $\mathcal{N}:= \sum_x a_x^\dagger a_x + b^\dagger b$, $[H,\mathcal{N}]=0$, so the number of particles is a conserved quantity. 
-A scheme of the system as well as the dispersion relation $\omega_k$ are shown in Fig. \ref{fig:scheme}.
+ which can be a two-level system, another resonator, an atom with a ladder-like level structure, etc.
+The energy of the impurity is $\Delta$.
+The band of free photons is defined by a dispersion relation depending on both the on-site photon energy $\epsilon$ and the hopping parameter $J$:  $\omega_k = \epsilon  - 2 J \cos k$, being $k$ the momentum and $\omega_k$ the corresponding energy. The momentum $k$ lies in $[-\pi/d,\pi/d)$, using the lattice spacing $d=1$ as unit of length. The group velocity is $v_k\equiv d\omega_k/dk=2J\sin k$. 
+A scheme of the system and the dispersion relation $\omega_k$ are shown in Fig. \ref{fig:scheme}.
+The interaction Hamiltonian between the impurity and the cavities, the last term in Eq.\ \eqref{eq:H}, is given by the celebrated Jaynes-Cummings model, being $g$ the coupling constant.
+This Hamiltonian commutes with the number operator $\mathcal{N}\equiv \sum_x a_x^\dagger a_x + b^\dagger b$, $[H,\mathcal{N}]=0$, so the number of particles is a conserved quantity. As a consequence, in the single-excitation subspace we restrict to in this paper, the results are independent of the nature of the scatterer.
 
 
 \begin{figure}[thb!]
@@ -93,13 +88,13 @@ This model is analytically solvable in the single-excitation subspace. A complet
  +  \sum_{x\geq 0} t_k e^{ikx} a_x^\dagger 
 %\\ 
 %& 
-+ d_k b^\dagger \Big]  |0\rangle ,
++ d_k b^\dagger \Big]  |0\rangle.
 \end{align}
-being $|0\rangle$ the vacuum state of the system ($a_x|0\rangle=b|0\rangle = 0$).
-Te coefficients 
- $t_k$ and $r_k$ play the role of  
+The state $|0\rangle$ represents the vacuum state of the system ($a_x|0\rangle=b|0\rangle = 0$).
+The coefficients 
+ $t_k$ and $r_k$ are the  
  transmission and reflection amplitudes respectively
-whenever a plane wave is sent through the impurity [First term in Eq. \eqref{eq:scattering_states}].  They are given by, 
+for an incident plane wave.  They are given by, 
 \begin{align}
 \label{eq:transmission}
 t_k & =\frac{iv_k(\omega_k - \Delta)}{iv_k(\omega_k-\Delta)-g^2} \, , 
@@ -109,16 +104,16 @@ r_k&=t_k-1
 d_k  &= \frac{g t_k}{\omega_k-\Delta} \,
 \label{eq:d_scattering_states}.
 \end{align} 
-The bound states read
+On the other hand, the bound states read
 \begin{equation}
  |\Psi_\pm\rangle =  N_\pm \left(\sum_x e^{-\kappa_\pm |x|} a_x^\dagger + d_\pm b^\dagger\right)|0\rangle.\label{eq:bound_states}
 \end{equation} 
-$N_\pm$ is a normalization constant, $1/\kappa_\pm$ is the localization length and $d_\pm$ is  the impurity amplitude. The energy of $|\Psi_\pm\rangle$ is $\omega_\pm = \epsilon - J(e^{-\kappa_\pm} + e^{\kappa_\pm})$. The expressions of $d_\pm$ and $N_\pm$ (Eqs. \eqref{eq:d_bound_states} and \eqref{eq:Npm} respectively), as well as the computation of $\kappa_\pm$, are shown in the appendix \ref{app:eigen}. Notice that the localization lengths,  $\kappa_\pm$, 
+Here, $N_\pm$ is a normalization constant, $1/\kappa_\pm$ is the localization length and $d_\pm$ is  the impurity amplitude. The energy of $|\Psi_\pm\rangle$ is $\omega_\pm = \epsilon - J(e^{-\kappa_\pm} + e^{\kappa_\pm})$. The expressions of $d_\pm$ and $N_\pm$ (Eqs. \eqref{eq:d_bound_states} and \eqref{eq:Npm} respectively), as well as the computation of $\kappa_\pm$, are shown in the appendix \ref{app:eigen}. Notice that the localization lengths,  $1/\kappa_\pm$, 
 fix the properties for the bound states: the energies $\omega_\pm$, the impurity amplitudes $d_\pm$ and the normalization factors $N_\pm$.
 
 
-In Fig. \ref{fig:E_bound}  we plot the bound states energy $\omega_\pm$ and the band limits for the propagating (scattering) eigenstates as a function of the coupling constant $g$.
-Two cases are shown.  The   impurity energy in the middle of the band ($\Delta-\epsilon=0$, solid lines), and below  ($\Delta-\epsilon=-J$, dotted-dashed lines). 
+In Fig. \ref{fig:E_bound}  we plot the bound states energies $\omega_\pm$ as a function of the coupling constant $g$, as well as the band limits for the scattering eigenstates.
+Two cases are shown: (i) the impurity energy $\Delta$ at the middle of the band ($\Delta-\epsilon=0$, solid lines), and (ii) closer to the band bottom  ($\Delta-\epsilon=-J$, dotted-dashed lines). 
 The bound states are localized (not propagating), thus they are always outside the band limits.
 As $g\to 0$, $\omega_{-(+)}$   approach the bottom (top) of the band.
 If  the impurity splitting  is in the middle of the band, the energies of the bound states are  symmetric.
@@ -126,7 +121,7 @@ On the other hand, $\omega_-$ moves away from the band faster than $\omega_+$ if
 
 \begin{figure}[thb!]
 \includegraphics[width=1\columnwidth]{E_bound_all.pdf}
-\caption{{\bf Bound states.} $(\omega_+-\epsilon)/J$ (solid, red line for $(\Delta-\epsilon)/J=0$ and dotted-dashed, red line for $\Delta-\epsilon=-J$) and $(\omega_--\epsilon)/J$ (solid, blue line for $\Delta-\epsilon=0$ and dotted-dashed, blue line for $\Delta-\epsilon=-J$) as a function of $g/J$. The red and blue dashed lines render the bottom and top band egdes respectively.}\label{fig:E_bound}
+\caption{{\bf Bound states.} $(\omega_+-\epsilon)/J$ (solid, red line for $(\Delta-\epsilon)/J=0$ and dotted-dashed, red line for $\Delta-\epsilon=-J$) and $(\omega_--\epsilon)/J$ (solid, blue line for $\Delta-\epsilon=0$ and dotted-dashed, blue line for $\Delta-\epsilon=-J$) as a function of $g/J$. The red and blue dashed lines render the top and bottom band egdes respectively.}\label{fig:E_bound}
 \end{figure}
  
 
@@ -134,17 +129,16 @@ On the other hand, $\omega_-$ moves away from the band faster than $\omega_+$ if
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Scattering dynamics}\label{sec:scatt}
-Let us review the single particle scattering dynamics.  
-This is a problem deeply studied in the literature.  In the photonic context relevant references are \cite{Nori2008a, Fan2005a, Fan2005b}.
+For completeness, we review the single-particle scattering dynamics. This is a problem deeply studied in the literature, sometimes in a different context \cite{Guinea1987}.  In the photonic context relevant references are \cite{Nori2008a, Fan2005a, Fan2005b}.
 Eq. \eqref{eq:transmission} reveals that, 
- when $\omega_k=\Delta$ there is full reflection ($T_k:=|t_k|^2=0$, $R_k:=|r_k|^2 = 1$). 
+ when $\omega_k=\Delta$ there is full reflection ($T_k\equiv |t_k|^2=0$, $R_k\equiv |r_k|^2 = 1$). 
  It is shown in Fig. \ref{fig:R}, where $R_k$ is illustrated with respect to $(\omega_k-\epsilon)/J$ and $(\Delta-\epsilon)/J$ for coupling $g=J/2$. 
-Considering the  input as a  single photon spectroscopy probe,  we could be tempted to argue that, like in the scattering, the impurity absorption is also maximum at resonance.  We will show that, due to the presence of bound states, this is not the case. 
+Considering the  input as a single-photon-spectroscopy probe, we could be tempted to argue that, like in the scattering, the impurity emission is also maximum at resonance.  We will show that, due to the presence of bound states, this is not the case. 
 
 \begin{figure}[thb!]
 \begin{center}
 \includegraphics[width=1.\columnwidth]{R_vs_w_Delta_g_0_5.pdf}
-\caption{{\bf Reflection probability.} $R_k$ as a function of $(\omega_k-\epsilon)/J$ and $(\Delta-\epsilon)/J$ for $g=J/2$. The black line is $\Delta=\omega_k$. $R_k=1$ as $\omega_k=\Delta$; in addition, it goes to 1 at the band edges, as $\sin k=0$ (Eq. \eqref{eq:transmission}).}\label{fig:R}
+\caption{{\bf Reflection probability.} $R_k$ as a function of $(\omega_k-\epsilon)/J$ and $(\Delta-\epsilon)/J$ for $g=J/2$. The black line is $\Delta=\omega_k$. $R_k=1$ as $\omega_k=\Delta$; in addition, it goes to 1 at the band edges, as $v_k=0$ (Eq. \eqref{eq:transmission}).}\label{fig:R}
 \end{center}
 \end{figure}
 
@@ -153,13 +147,13 @@ Considering the  input as a  single photon spectroscopy probe,  we could be temp
 
 \section{Spontaneous decay}\label{sec:spontaneous_decay}
 
-We discuss now   the spontaneous emission and the role of the bound states.
+We discuss now  the spontaneous emission.
 In our studies, the  initial condition is $|\Psi(0)\rangle = b^\dagger |0\rangle$. Spanning this state in  scattering and bound eigenstates, we can compute the state at time $t$:
 \begin{align}
 |\Psi(t)\rangle = & \frac{1}{2\pi}\int_{-\pi}^\pi dk\;c_ke^{-i\omega_k t}|\Psi_k\rangle \nonumber \\
  + & c_+ e^{-i\omega_+ t} |\Psi_+\rangle + c_- e^{-i\omega_- t} |\Psi_-\rangle, \label{eq:psi(t)}
 \end{align}
-with $c_k=\langle\Psi_k|b^\dagger |0\rangle$ and $c_\pm=\langle\Psi_\pm|b^\dagger |0\rangle$. These coefficients are obtained by projecting the eigenstates Eq. \eqref{eq:scattering_states} and Eq. \eqref{eq:bound_states}. The expressions are
+with $c_k=\langle\Psi_k|b^\dagger |0\rangle$ and $c_\pm=\langle\Psi_\pm|b^\dagger |0\rangle$. These coefficients are obtained by projecting the eigenstates, Eqs. \eqref{eq:scattering_states} and \eqref{eq:bound_states}. The expressions are
 \begin{align} \label{eq:ck}
 c_k &  = \frac{iv_k g}{iv_k(\omega_k - \Delta) + g^2},\\
 \label{eq:cpm}
@@ -170,23 +164,22 @@ c_\pm & =  \left(\frac{1+e^{-2\kappa_\pm}}{1-e^{-2\kappa_\pm}}+\frac{g^2}{(\omeg
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Energy shift}
 
-The mean energy of $|\Psi(t)\rangle$ is $\langle H\rangle (t) = \langle H\rangle (0) = \Delta$.  Thus, 
+The conserved energy of $|\Psi(t)\rangle$ is $\langle H\rangle (t) = \langle H\rangle (0) = \Delta$. Thus,
 \begin{equation}\label{eq:H(t)}
 \Delta  = \frac{1}{2\pi}\int_{-\pi}^\pi dk |c_k|^2 \omega_k + |c_+|^2 \omega_+ + |c_-|^2 \omega_- \, ,
 \end{equation}
 and the  average energy for the propagating field  is
 \begin{equation}
-\omega_\text{ph} = \frac{\int_{-\pi}^\pi dk |c_k|^2 \omega_k/2\pi}{\int_{-\pi}^\pi dk |c_k|^2/2\pi} = \frac{\int_{-\pi}^\pi dk |c_k|^2 \omega_k/2\pi}{(1-P_\text{lig})},
+\omega_\text{ph} \equiv \frac{\int_{-\pi}^\pi dk |c_k|^2 \omega_k/2\pi}{\int_{-\pi}^\pi dk |c_k|^2/2\pi} = \frac{\int_{-\pi}^\pi dk |c_k|^2 \omega_k/2\pi}{(1-P_\text{lig})},
 \end{equation}
-with $P_\text{lig} = |c_+|^2 + |c_-|^2$.  
-Using Eq. \eqref{eq:H(t)}  we conclude that
+with $P_\text{lig} \equiv |c_+|^2 + |c_-|^2$.  
+Using Eq. \eqref{eq:H(t)}  we conclude that the energy of the spontaneously emitted photon must be
 \begin{equation}
 \omega_\text{ph} =\frac{\Delta - |c_+|^2 \omega_+ - |c_-|^2 \omega_-}{1-P_\text{lig}}. \label{eq:omega_ph}
 \end{equation}
-We plot $(\omega_\text{ph}-\epsilon)/J$ as a function of the $(\Delta-\epsilon)/J$, for different values of $g$ in Fig. \ref{fig:E_ph}. The closer $\Delta$  is  the band edges, more different is  $\omega_\text{ph}$ from $\Delta$ (solid straight line).
-The shift is larger increasing the coupling $g$
-Eventually, as $g/J\to\infty$, the emitted energy is always in the middle of the band.
-Therefore, the impurity emits a photon with an energy different than $\Delta$ even though the scattering resonance frequency happens as $\omega_k=\Delta$, unless $\Delta$ is in the middle of the band.
+Figure \ref{fig:E_ph} shows $(\omega_\text{ph}-\epsilon)/J$ as a function of the $(\Delta-\epsilon)/J$, for different values of $g$. The closer $\Delta$ is to the band edges, the more $\omega_\text{ph}$ departs from $\Delta$.
+The shift increases monotonically with the coupling $g$. Eventually, as $g/J\to\infty$, the emitted energy coincides with the middle of the band for all $\Delta$.
+Therefore, whenever $\Delta$ is not in the middle of the band, the impurity emits a photon with an energy different than $\Delta$ even though the scattering resonance frequency happens as $\omega_k=\Delta$.
 This  breaks the correspondence between scattering and emission spectra. 
 
 
@@ -196,22 +189,22 @@ This  breaks the correspondence between scattering and emission spectra.
 }\label{fig:E_ph}
 \end{figure}
 
-In order to shed more light on this, we study the energy distribution of the emitted photon $|c_k|^2$. We plot it as a function of $(\omega_k-\epsilon)/J$ and $(\Delta-\epsilon)/J$ in Fig. \ref{fig:c_k} for $g=J/5$ and $g=J/2$ [a) and b) respectively]. If the coupling is small enough (left panel), the energy distribution is well peaked around $\omega_k=\Delta$. However, as $g$ increases (right panel), $|c_k|^2$ reaches its maximum for $\omega_k\neq\Delta$, being the difference bigger as $\Delta$ is closer to one of the band edges. This deviation from $\Delta$ implies the frequency shift of the emitted photon, as already seen in Eq. \eqref{eq:omega_ph} and Fig. \ref{fig:E_ph}.
-Therefore,   scattering and emission are not inverse problems but
-emission and absorption  are:    $c_k=d_k^*$, in Eqs.  \eqref{eq:d_scattering_states} and \eqref{eq:ck}.
+In order to shed more light on this, we study the energy distribution of the emitted photon $|c_k|^2$. We plot it as a function of $(\omega_k-\epsilon)/J$ and $(\Delta-\epsilon)/J$ in Fig. \ref{fig:c_k} for $g=J/5$ and $g=J/2$ [panels a) and b), respectively]. If the coupling is small enough (left panel), the energy distribution is well peaked around $\omega_k=\Delta$. However, as $g$ increases (right panel), $|c_k|^2$ reaches its maximum for $\omega_k\neq\Delta$, being the difference larger as $\Delta$ is closer to one of the band edges. This deviation of the maximum away from $\Delta$ implies frequency shift of the emitted photon, as already seen in Eq. \eqref{eq:omega_ph} and Fig. \ref{fig:E_ph}.
+Therefore, we conclude that scattering and emission are not inverse problems but
+emission and absorption  are (as can be seen from the equality $c_k=d_k^*$, in Eqs.  \eqref{eq:d_scattering_states} and \eqref{eq:ck}).
 
 \begin{figure}[thb!]
 \includegraphics[width=1.0\columnwidth]{e_vs_w_Delta_g_0_2_0_5.pdf}
 \caption{{\bf Emission energy distribution.} $|c_k|^2$ as a function $\omega_k/J$ and $\Delta/J$ for $\epsilon=0$ and a) $g=J/5$, b) $g=J/2$. The black line renders $\Delta=\omega_k$. We normalize $c_k$ such that $\text{max}_k(|c_k|^2)=1$.}\label{fig:c_k}
 \end{figure}
 
-In situations where the band limits are sent to infinity, there is not bound states and the impurity emits single photons peaked at its bare frequency, $\Delta$.  In such a case, emission and scattering resonance occurs at the same energy, $\Delta$.   Whenever the bands are considered, as in our case,  the general  condition for vanishing frequency shift is $|c_+|^2(\omega_+-\Delta)=|c_-|^2(\Delta-\omega_-)$, Eq. \eqref{eq:omega_ph}. This condition is fulfilled if $\Delta$ is in the middle of the band, since $\omega_\pm$ move away from the band at the same rate (solid lines of Fig. \ref{fig:E_bound}) and the overlap with both eigenstates $|c_\pm|^2$ is the same, Cf. Eq. \eqref{eq:cpm}. 
+In situations where the band limits are sent to infinity, there are not bound states and the impurity emits a photon peaked at its bare frequency, $\Delta$. In such a case, emission and scattering resonance occurs at the same energy, $\Delta$.  Whenever the bands are considered, as in our case,  the general  condition for vanishing frequency shift is $|c_+|^2(\omega_+-\Delta)=|c_-|^2(\Delta-\omega_-)$, Eq. \eqref{eq:omega_ph}. This condition is fulfilled if $\Delta$ is in the middle of the band, since $\omega_\pm$ move away from the band at the same rate (solid lines of Fig. \ref{fig:E_bound}) and the overlap with both eigenstates $|c_\pm|^2$ is the same, Cf. Eq. \eqref{eq:cpm}. Notice that a model with another photonic medium will also give a shift in the emitted frequency, provided there exist single-particle bound states.
 
-Finally, we characterize the emission probability in propagating modes, $P_\text{emission}:=1-P_\text{lig}$, see Fig. \ref{fig:P_emi}.  Two main effects can be extracted.  First, the emission into bound states is negligible ( $P_\text{emission} \cong 1$) in the range $g/J \ll1$.   Increasing this ratio, and depending on the location of the impurity with respect to the band, bound states are populated, decreasing the emission in travelling photons. The latter occurs at smaller values of the coupling as the impurity is closer to the band edges.  Despite this behavior, the emission probability is always appreciable for large values of the ratio: $g/J \cong 2.5$ yields $P_\text{emission} \cong 0.25$ for the values of $\Delta$ considered in Fig. \ref{fig:P_emi}.
+Finally, we characterize the emission probability in propagating modes, $P_\text{emission}\equiv 1-P_\text{lig}$, see Fig. \ref{fig:P_emi}.  Two main effects can be extracted.  First, the emission into bound states is negligible ( $P_\text{emission} \cong 1$) in the range $g/J \ll1$.   Increasing this ratio, and depending on the location of the impurity with respect to the band, bound states are populated, decreasing the emission of travelling photons. This behavior is more marked if the impurity bare energy is closer to the band edges. Nevertheless, the emission probability is appreciable for really large values of the ratio: for instance $g/J \cong 2.5$ yields $P_\text{emission} \cong 0.25$ for the values of $\Delta$ considered in Fig. \ref{fig:P_emi}.
 
 \begin{figure}[thb!]
 \includegraphics[width=1.0\columnwidth]{p_emission_a.pdf}
-\caption{{\bf Probability of emitting.} $P_\text{emission}$ for $\Delta-\epsilon=-3J/2,-J,-J/2,0$ as a function of $g/J$ from bottom to top (solid blue, dashed red, dotted green and dot-dashed black, respectively).}\label{fig:P_emi}
+\caption{{\bf Probability of photon emission.} $P_\text{emission}$ as a function of $g/J$ for $\Delta-\epsilon=-3J/2,-J,-J/2,0$ from bottom to top (solid blue, dashed red, dotted green and dot-dashed black, respectively).}\label{fig:P_emi}
 \end{figure}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -219,8 +212,10 @@ Finally, we characterize the emission probability in propagating modes, $P_\text
 
 \subsection{Emitted field}
 
-We now study the shape of the emitted field. We compute the amplitudes in position space, $\phi_x:=\langle 0|a_x|\Psi(t)\rangle$ [Cf. App.\ \ref{app:field}] to reconstruct the spatial profile of the emitted photon. The probability $|\phi_x|^2$ is shown Fig. \ref{fig:w_n} at time $t=75/J$ for two values of the detuning, $\Delta-\epsilon=0$ (blue solid) and $-J$ (red dashed), and fixed $g=J/5$. The vertical solid black lines represents the causal cone $|x_\text{max}|=v_\text{max}t$, defined in terms of the maximum group velocity $v_\text{max}=v_{k=\pi/2}=2J$. Notice that the support of the photon wavefunction $|\phi_x|^2$ is defined by this causal constraint and coincides for both impurity energies. However, the blue curve corresponding to the impurity being in the middle of the band, is quite sharp around $|x_\text{max}|$, whereas the other ($\Delta-\epsilon=-J$) is peaked around $x$ clearly far away from $|x_\text{max}|$. This is due to the fact that, in momentum space, the first one is distributed around $k=\pi/2$, corresponding to the highest group velocity, whereas the other is peaked around $k$ such that $\omega_k-\epsilon\simeq -J$, with $v_k$ smaller than $v_\text{max}$. This behavior would be completely different in a waveguide with linear dispersion relation, where the emitted photon would be well peaked around $|x_\text{max}|$ in position space, no matters $\Delta$ \cite{Eberly2002}. Notice that the emitted field has a little exponential tail beyond $|x_\text{max}|$, 
-wich are nothing but the exponential tails outside the light-cone in the free field scalar propagator \cite[Sect. 4.5]{Greiner-fq}.
+We now study the spatial profile of the emitted field by computing the amplitudes in position space, $\phi_x\equiv \langle 0|a_x|\Psi(t)\rangle$ [Cf. App.\ \ref{app:field}]. The photon probability distribution $|\phi_x|^2$ is shown in Fig. \ref{fig:w_n} at time $t=75/J$ for two values of the detuning, $\Delta-\epsilon=0$ (blue solid) and $-J$ (red dashed), and fixed $g=J/5$. The vertical solid black lines represent $|x|=x_\text{max}\equiv v_\text{max}t$, defined in terms of the maximum group velocity $v_\text{max}= v_{k=\pi/2}=2J$. 
+
+The propagator $|\phi_x|^2$ is mostly confined within the causal cone, but strictly speaking it decays exponentially for $|x|>x_\text{max}$, which is the well-known exponential tail outside the light-cone in the free field scalar {\it propagator} \cite[Sect. 4.5]{Greiner-fq}, \cite[Sect. 2]{Peskin}. If $\Delta$ is in the middle of the band, the emitted photon has a momentum distribution peaked around $k=\pi/2$, so its propagation velocity will be $v_\text{max}$. This gives a sharply peaked behavior in position space close to $|x|=x_\text{max}$ (blue solid curve). On the other hand, if there is some detuning with respect to the middle of the band, the group velocity will be $v_k<v_\text{max}$, giving a spatial profile which maximizes for $|x|$ clearly smaller than $x_\text{max}$ ($\Delta-\epsilon=-J$, dashed red curve). This behavior would be different in a waveguide with linear dispersion relation, where the emitted photon would be well peaked around $|x_\text{max}|$ in position space, independently of the value of $\Delta$ \cite{Eberly2002}.
+
 
 \begin{figure}[thb!]
 \includegraphics[width=1.0\columnwidth]{wx_g_0_2_Delta_0_-1.pdf}
@@ -233,21 +228,19 @@ wich are nothing but the exponential tails outside the light-cone in the free fi
 
 \subsection{Impurity dynamics}
 
-Finally, we discuss impurity dynamics. 
-Using Eq. \eqref{eq:psi(t)}
-\begin{align}
+We analyze the time evolution of the amplitude of the excited state of the impurity, $c_1(t)$. 
+Using Eq. \eqref{eq:psi(t)} we obtain
+\begin{equation}
 \label{eq:qubit_amplitude}
-c_1(t) & =
-\langle 0|b|\Psi(t)\rangle
-\\ \nonumber
-& =
-\underset {c_1^\text{s}(t):=}{
-\frac{1}{2\pi}\int_{-\pi}^\pi dk|c_k|^2 e^{-i\omega_k t}}  +
-\underset {c_1^\text{b}(t):=}{
-\sum_{\alpha = \pm}
- |c_\alpha|^2 e^{-i\omega_\alpha t}} \, .
-\end{align}
-where he have explicitly split  the contribution in the decay  due to coupling to propagating modes,  $c_1^\text{s}(t):=\int_{-\pi}^\pi dk |c_k|^2 e^{-i\omega_k t}/2\pi$, and  to  bound states, $c_1^\text{b}(t):=|c_+|^2 e^{-i\omega_+ t} + |c_-|^2 e^{-i\omega_- t}$.
+c_1(t) =
+\langle 0|b|\Psi(t)\rangle 
+ =
+c_1^\text{s}(t) + 
+c_1^\text{b}(t) \, .
+\end{equation}
+where he have explicitly split the contribution to the decay due to coupling to propagating modes,  $c_1^\text{s}(t) = \int_{-\pi}^\pi dk |c_k|^2 e^{-i\omega_k t}/2\pi$, and to  bound states, $c_1^\text{b}(t) = \sum_{\alpha=\pm}|c_\alpha|^2 e^{-i\omega_\alpha t}$.
+
+This decay has already been studied in \cite{Lombardo2014} when $\Delta$ is in the middle of the band and in \cite{Garmon2013} as $\Delta$ is close to one of the band edges. We generalize these works, studying how the impurity decays as a function of the energy with respect to the photonic band.
 
 First, we focus on  $c_1^\text{s}(t)$:
 \begin{align}
@@ -258,20 +251,25 @@ First, we focus on  $c_1^\text{s}(t)$:
 \includegraphics[width=1.0\columnwidth]{integrand_inset_Delta_0_g_0_2.pdf}
 \caption{{\bf Integrand.} Integrand $F(y)$ for $g=J/5$ (red, solid), Lorentzian approximation (blue, dashed), $F(y)$ for $g=0$ (black, dotted) and $G(y)$ (Eq. \eqref{eq:G}, black, dotted-dashed). In the inset, we zoom $F(y)$ around $y=-1$ to see $\Delta y_-$. We fix $\Delta=\epsilon$.}\label{fig:integrand}
 \end{figure}
-The behavior of $c_\text{sc}(t)$ is determined by $F(y)$. We plot it in Fig. \ref{fig:integrand}. If  $\Delta$ is far enough from the band edges and $g$ is small enough, $F(y)$ can be approximated by a Lorentzian $L(y)$ (blue, dashed curve in Fig. \ref{fig:integrand}), giving an exponential decay $c_1^\text{s}(t)\sim e^{-(i\varphi+\gamma_0/2)t}$. 
-Besides, 
-the first order approximation of $\gamma_0$ and $\varphi$ gives the Fermi golden rule, $\gamma_0=J\sin k_\Delta/g^2$, with $k_\Delta$ such that $\omega_{k_\Delta}=\Delta$, and $\varphi=\Delta$. More details can be found in the appendix \ref{app:integrand}. We show $\gamma_0$ and $\delta\varphi=\varphi-\Delta$ for $g=3J/10$ in Fig. \ref{fig:qubit_decay},   obtained with the Fermi golden rule and the  Lorentzian compared   with the (numerical) exact result.  The Fermi golden rule perfectly matches the results around the middle of the band, but the Lorentzian approximation is necessary as we get closer to the band edges.
+The behavior of $c_1^\text{s}(t)$ is determined by the kernel $F(y)$, which is related to the density of photonic states in terms of the dimensionless energy $y = \cos k$. This kernel is represented in Fig. \ref{fig:integrand}. At sufficiently long times, the oscillating term $e^{i2yJt}$ cancels out any smooth contribution to $c_1^\text{s}(t)$. Fig. \ref{fig:qubit_dynamics} will show that this arguments provides accurate results almost from the initial time. Therefore, the relaxation dynamics is governed by the sharpest features and the singularities of $F(y)$. We find three different main contributions: a Lorentzian peak, associated to a pole of $F(y)$ in the complex plane, two peaks appearing at $y_\pm^*$, with $y_\pm^*$ close to $\pm 1$, and the singular points (discontinuity of the derivative of $F(y)$) at $y=\pm 1$.
+
+The Lorentzian peak gives an exponential decay $c_1^\text{s}(t)\sim e^{-(i\varphi+1/2\tau_0)t}$. 
+The first order approximation of $\tau_0$ and $\varphi$ in $(g/J)^2$ recovers the result obtained by the Fermi golden rule, $\tau_0=J\sin k_\Delta/g^2$, with $k_\Delta$ such that $\omega_{k_\Delta}=\Delta$, and $\varphi=\Delta$ (details can be found in the appendix \ref{app:integrand}). 
+Figure \ref{fig:qubit_decay} compares the (numerical) exact results for $\tau_0$ and $\delta\varphi\equiv\varphi-\Delta$ with those obtained with the Fermi golden rule and the Lorentzian approximation of $F(y)$. The Fermi golden rule perfectly matches the exact results when $\Delta$ is around the middle of the band, but considering the full Lorentzian approximation is necessary as $\Delta$ gets closer to the band edges. A breakdown of the Fermi golden rule has previously been seen in different impurity decay scenarios \cite{Petrosky2005,Tanaka2006,Garmon2009}.
+
+Secondly, when $g=0$, $F(y)$ diverges as $1/\sqrt{1-y^2}$ when $y\to\pm 1$(black dotted curve in Fig. \ref{fig:integrand}). This kind of singularity gives a $t^{-1/2}$ decay for the scattering amplitude $c_1^\text{s}(t)$ (Appendix \ref{app:integrand}), or a $t^{-1}$ decay for the scattering contribution to the impurity excited state population, $P_1^\text{s}(t)\equiv |c_1^\text{s}(t)|^2$. As $g\neq 0$, this divergence disappears and $F(y)$ presents a peak, achieving its maximum at $y_\pm^*\simeq \pm 1$. As a consequence, at sufficiently long times, this contribution to $P_1^\text{s}(t)$ stops decaying polinomially to decay exponentially as $e^{-t/\tau_{1,+}}$ and $e^{-t/\tau_{1,-}}$. We find that $\tau_{1,\pm} = (4 \Delta y_\pm)^{-1}$, where $\Delta y_\pm\equiv |y_\pm \mp 1|$ (see inset of Fig. \ref{fig:integrand}). 
+
+Finally, the singularities at the band edges, where $F(y)$ is not differentiable, with zero-width in $y-$space, provide a non-exponential (power-law) contribution to  $P_1^\text{s}(t) $ \cite{Khalfin1958,Fonda1978,Hack1982,Gaveau1995}, which dominates for  $t\gg \tau_0,\tau_{1,\pm}$. Calculations, detailed in Appendix \ref{app:integrand}, show that this contribution is $P_1^\text{s}(t) \sim t ^{-3} \cos^2(2t-3\pi/4)$. This transition between $t^{-1}$ and $t^{-3}$ decay was already discussed in \cite{Garmon2013}, but they did not see the oscillating part, since they took the impurity energy really close to the lower part of the band, neglecting the contribution of the upper bound state.
+
+This decay with $t^{-3}$ is ubiquitous to decay problems \cite{Chiu1977}, both for continuous systems \cite{Winter1961,GarciaCalderon2006} and for discrete ones \cite{Longhi2006a,Dente2008,Longhi2006b}.
+
+
+The contribution of the bound states is much simpler: it gives an oscillatory term which, in the lossless case considered in this paper, persists for infinitely long times, $P_1^\text{b}(t)\equiv|c_1^\text{b}(t)|^2=|c_+|^4+|c_-|^4+2|c_+c_-|^2\cos((\omega_+-\omega_-)t)$, \cite{Gaveau1995,Lombardo2014}
 
 \begin{figure}[thb!]
 \includegraphics[width=1.0\columnwidth]{gamma_phi_g_0_3.pdf}
-\caption{{\bf Exponential decay.} a) $\gamma_0/J$ and b) $\delta\varphi/J$ depending on the position of the impurity energy with respect to the band for $g=3J/10$ and $\epsilon=0$. $\gamma_0/J$ is depicted in units of the Fermi golden rule result in the middle of the band. The blue points are computed numerically, the red, solid curve corresponds to the Fermi golden rule and the dashed, black curve to the single pole approximation. As seen, the single-pole approximation works better close to the band egdes, whereas in the middle of the band both models converge.}\label{fig:qubit_decay}
+\caption{{\bf Exponential decay.} a) $\tau_0 J$ and b) $\delta\varphi/J$ depending on the position of the impurity energy with respect to the band for $g=3J/10$ and $\epsilon=0$. $\tau_0 J$ is depicted in units of the Fermi golden rule result in the middle of the band. The blue points are computed numerically, the red, solid curve corresponds to the Fermi golden rule and the dashed, black curve to the single pole approximation. As seen, the single-pole approximation works better close to the band egdes, whereas in the middle of the band both models converge.}\label{fig:qubit_decay}
 \end{figure}
-
-
-If $t\gg\tau_0:=\gamma_0^{-1}$, relaxing dynamics in nontrivial electromagnetic media usually follows a power-law \cite{Gaveau1995}. It is originated by singularities in $F(y)$. We find two different contributions. First, $F(y)$ quasi-diverges with $(1-y^2)^{-1/2}$ as $y\to\pm 1$. In fact, it diverges if $g=0$ (black, dotted curve in Fig. \ref{fig:integrand}). As $g\neq 0$,  shows a narrow peak that  goes to 0 as $y=\pm 1$, becoming maximal for some $y_\pm^*$ close to $\pm 1$ respectively. This kind of singularity with $(1-y^2)^{-1/2}$ gives a $t^{-1/2}$ decay in the scattering amplitude $c_1^\text{s}(t)$ (Appendix \ref{app:integrand}), or a $t^{-1}$ decay in the scattering contribution to the impurity population, $P_1^\text{s}(t):=|c_1^\text{s}(t)|^2$. Not being a real divergence, $P_1^\text{s}(t)$ eventually decays exponentially with $e^{-t/\tau_{1,+}}$ and $e^{-t/\tau_{1,-}}$, where $\tau_{1,\pm}:=(4 \Delta y_\pm)^{-1}$, with $\Delta y_\pm:= |y_\pm \mp 1|$ (see inset of Fig. \ref{fig:integrand}). Finally, as $t\gg \tau_0,\tau_{1,\pm}$, any soft part of $F(y)$ is smeared out because of the extremely fast oscillating factor $e^{i2Jt}$. The only surviving contribution is due to the real singularities of $F(y)$, which happen for $y= \pm 1$, where $F(y)\sim \sqrt{1-y^2}$. $P_1^\text{s}(t)$ decays with $t^{-3}$ and it oscillates with $\cos^2(2t-3\pi/4)$. More details can be found in the Appendix \ref{app:integrand}.
-
-
-The contribution of the bound states is much simpler: it gives an oscillatory term which persists for infinitely long times, $P_1^\text{b}(t):=|c_1^\text{b}(t)|^2=|c_+|^4+|c_-|^4+2|c_+c_-|^2\cos((\omega_+-\omega_-)t)$, \cite{Gaveau1995,Lombardo2014}
 
 
 \begin{figure}[thb!]
@@ -280,21 +278,18 @@ The contribution of the bound states is much simpler: it gives an oscillatory te
 \end{figure}
 
 We sum up all this information in Fig.\ \ref{fig:qubit_dynamics}, where we plot the impurity dynamics for $\Delta-\epsilon=0$ and $g=J/5$, using logarithmic scale. 
-We remove the asymptotic oscillations for the sake of clarity. The population $P_1(t):=|c_1(t)|^2$ is drawn as a black, dotted curve. This curve shows an initial exponential decay which, after a transient period, achieves the stationary regime of $P_1^\text{b}(t)$ (purple, dashed curve). We also show $P_1^\text{s}(t)$ in the red, solid curve. After the initial exponential decay, it decays with a power-law, as expected. We show $P_1^\text{s}(t)$ in log-log scale in the inset, as well as the $t^{-1}$ prediction, which eventually decays with $e^{-t/\tau_1}$ (as $\Delta-\epsilon=0$, $\tau_1:=\tau_{1,+}=\tau_{1,-}$), and the $t^{-3}$ power-law. The agreement with the decay is perfect in this limit, as well as the oscillation with $\cos^2(2t-3\pi/4)$ (not shown).
-
-{\color{red} se puede observar estas tails?} {\color{blue}Quiz\'as Luis sepa decir algo al respecto.}
-
+We remove the asymptotic oscillations for the sake of clarity. The population $P_1(t)\equiv|c_1(t)|^2$ is drawn as a black, dotted curve. This curve shows an exponential decay which, after a transient period, achieves the stationary regime of $P_1^\text{b}(t)$ (purple, dashed curve; remind that we are not showing the oscillations). We also show $P_1^\text{s}(t)$ in the red solid curve. After the initial exponential decay, it decays with a power-law, as expected. The inset shows $P_1^\text{s}(t)$ in log-log scale, as well as the $t^{-1}$ prediction, which eventually decays with $e^{-t/\tau_1}$ (as $\Delta-\epsilon=0$, $\tau_1\equiv\tau_{1,+}=\tau_{1,-}$), and the $t^{-3}$ power-law. The agreement between the analytical prediction and the exact (numerical) integration is perfect in this limit, as well as the oscillation with $\cos^2(2t-3\pi/4)$ (not shown). Even though the population at this power-law tail is very small, it has been measured for different systems, such as dissolved organic materials \cite{Rothe2006}.
 
 \section{Conclusions}\label{sec:conclusions}
 
-Summarizing, we have demonstrated that in presence of a band gap and single-photon bound states, spontaneous decay and scattering are no longer symmetric problems, in the sense that the scattering resonance frequency differs from the spontaneous emission frequency. In addition to this, we have seen that the existence of bound states modifies the quantum impurity dynamics in an intriguing way, creating three separate dynamical regimes: an initial exponentially decaying regime, followed by a power-law at long times and eventually ending up in a stationary oscillating regime. Finally, we have also studied how the profile of the emitted photons is affected by the position of the quantum impurity with respect to the band edges.
+We have demonstrated that spontaneous decay and scattering are no longer symmetric problems in the presence of a band gap and single-photon bound states, in the sense that the scattering resonance frequency differs from the spontaneous emission frequency. We have seen that the profile of the emitted photon strongly depends on the energy of the impurity with respect to the photonic band. Finally, we have shown that the existence of bound states modifies the quantum impurity dynamics in an intriguing way, creating three separate dynamical regimes: an exponential decay, followed by a power-law at long times and eventually ending up in a stationary oscillating regime.
 
-Some features, such as the spectroscopic shifts in the spontaneously emitted photons can be easily detected by tuning up and down the frequency of the qubit with respect to the band edge. For time-domain experiments and probing the qubit dynamics, we would suggest using a more sophisticated protocol that (i) places the qubit at the right frequency, (ii) then excites it and after a finite time $t$ (iii) detunes the qubit and probes dispersively its excited state population. All of these ideas can be implemented in state-of-the-art setups with superconducting cavities and transmon qubits\ \cite{liu2016}, and also with quantum dots in photonic crystals.
+Some features, such as the spectroscopic shifts in the spontaneously emitted photons can be detectable by tuning up and down the frequency of the qubit with respect to the band edge. For time-domain experiments and probing the qubit dynamics, we suggest using a more sophisticated protocol that (i) places the qubit at the right frequency, (ii) then excites it and after a finite time $t$ (iii) detunes the qubit and probes dispersively its excited state population. All of these ideas can be implemented in state-of-the-art setups with superconducting cavities and transmon qubits \cite{liu2016}, and also with quantum dots in photonic crystals \cite{Arcari2014,Sollner2015,Lodahl2015}.
 
 
 \begin{acknowledgements}
 We acknowledge 
-support by the Spanish Ministerio de Economia y Competitividad within projects MAT2011-28581-C02, FIS2012-33022 and No. FIS2014-55867-P, the Gobierno
+support by the Spanish Ministerio de Economia y Competitividad within projects MAT2014-53432-C5-1-R, FIS2012-33022 and No. FIS2014-55867-P, the Gobierno
 de Aragon (FENOL group), CAM Research Network QUITEMAD+
 and the European project PROMISCE.
 \end{acknowledgements}
@@ -318,15 +313,15 @@ and the European project PROMISCE.
 
 %\subsection{Bound states}
 
-Let us introduce the expressions of the bound states (Eq. \eqref{eq:bound_states}). $d_\pm$, the impurity amplitude, is
+Let us introduce the expressions of the bound states (Eq. \eqref{eq:bound_states}). The impurity excited state amplitude $d_\pm$ is
 \begin{equation}
 d_\pm = \frac{g}{\omega_\pm - \Delta}.\label{eq:d_bound_states}
 \end{equation}
-The exponential decay rate $\kappa_\pm$ is such that $\text{Re}(\kappa_\pm)>0$ and $\text{Im}(\kappa_\pm)=0,\pi$. Defining $\eta_\pm := e^{-\kappa_\pm}$ and using the eigenvalue equation $H|\Psi_\pm\rangle = \omega_\pm|\Psi_\pm\rangle$
+In order to compute $\kappa_\pm$, we define $\eta_\pm \equiv e^{-\kappa_\pm}$ and use the eigenvalue equation $H|\Psi_\pm\rangle = \omega_\pm|\Psi_\pm\rangle$ \cite{Longo2011}
 \begin{equation}\label{eq:eta}
 \eta_\pm ^4 + \frac{\Delta-\epsilon}{J} \eta_\pm ^3 + \frac{g^2}{J^2} \eta_\pm ^2 - \frac{\Delta-\epsilon}{J} \eta_\pm - 1 = 0.
 \end{equation}
-This fourth degree algebraic equation has four solutions. However, there are just two solutions for $\eta_\pm$ fulfilling the aforementioned restrictions for $\kappa_\pm$, which eventually define $|\Psi_\pm\rangle$.
+This fourth degree algebraic equation has four solutions. However, we have two constrains: $\text{Re}(\kappa_\pm)>0$, because the photonic cloud is exponentially localized around the impurity, and $\text{Im}(\kappa_\pm)=0,\pi$, since $\omega_\pm = \epsilon - J(e^{-\kappa_\pm} + e^{\kappa_\pm}) \in \mathbb{R}$. There are just two solutions for $\eta_\pm$ fulfilling these restrictions.
 The normalization factor is
 \begin{equation}\label{eq:Npm}
 N_\pm = \left(\frac{1+e^{-2\kappa_\pm}}{1-e^{-2\kappa_\pm}}+|d_\pm|^2\right)^{-1/2}.
@@ -364,10 +359,10 @@ Finally, $c_\pm=\langle 0|\sigma^-|\Psi_\pm\rangle=(N_\pm d_\pm)^*$ can be obtai
 
 \section{Emitted field}\label{app:field}
 
-The position profile of the emitted field $\phi_x(t)=\langle 0|a_x|\Psi(t)\rangle$ fulfills the following expression:
+The profile of the emitted field $\phi_x(t)=\langle 0|a_x|\Psi(t)\rangle$ fulfills the following expression:
 \begin{align}
 \phi_x(t)& = \frac{1}{2\pi}\int_{-\pi}^\pi dk c_k e^{-i\omega_k t}\langle 0|a_x|\Psi_k\rangle \\
-& + c_+ e^{-i\omega_+ t} \langle 0|a_x|\Psi_+\rangle+ c_- e^{-i\omega-+ t} \langle 0|a_x|\Psi_-\rangle, \nonumber
+& + c_+ e^{-i\omega_+ t} \langle 0|a_x|\Psi_+\rangle+ c_- e^{-i\omega_- t} \langle 0|a_x|\Psi_-\rangle, \nonumber
 \end{align}
 where we have used Eq. \eqref{eq:psi(t)}. In order to compute the amplitude $\langle 0|a_x|\Psi_k\rangle$ we take the expression of $|\Psi_k\rangle$, Eq. \eqref{eq:scattering_states}, for $k>0$:
 \begin{equation}
@@ -406,18 +401,18 @@ The integrand $F(y)$, Eq. \eqref{eq:F}, depicts a well peaked behavior, with a L
 \begin{equation}
 c_1^\text{s}(t) = i8(g/J)^2 e^{-i\epsilon t}e^{i2y_p Jt}\text{Res}(F(y),y=y_p),
 \end{equation}
-By computing this numerically, we obtain the decay rate  $\gamma_0 = 4J\;\text{Im}(y_p)$ and the oscillating phase $\varphi = \epsilon - 2J\;\text{Re}(y_p)$, as shown in Fig. \ref{fig:qubit_decay} a) and b) respectively in the main text.
+By computing this numerically, we obtain the decay rate  $\tau_0 = (4J\;\text{Im}(y_p))^{-1}$ and the oscillating phase $\varphi = \epsilon - 2J\;\text{Re}(y_p)$, as shown in Figs. \ref{fig:qubit_decay} a) and b) respectively in the main text.
 
 %\begin{figure}[thb!]
-%\includegraphics[width=1.0\columnwidth]{integrand_inset_Delta=0_g=0,2.pdf}
+%\includegraphics[width=1.0\columnwidth]{../Figures/integrand_inset_Delta=0_g=0,2.pdf}
 %\caption{{\bf Integrand.} Integrand $F(y)$ for $g=J/5$ and $\Delta-\epsilon=0$ (red, solid), the same for $\Delta-\epsilon=0$ and $g=0$ (blue, dashed) and $G(y)$ (Eq. \ref{eq:G}, black, dotted). In the inset, we zoom $F(y)$ around $y=-1$ to see $\Delta y_-$.}\label{fig:integrand}
 %\end{figure}
 
-However, as $t\gg \tau_0$, different regimes emerge. $F(y)$ has a sharp behavior close to $y=\pm 1$. Actually, it diverges when $y\to\pm 1$ if $g=0$. In order to take into account this contribution, we can approximate $F(y)$ by $F(y)|_{g=0}$ (see blue, dashed curve of Fig. \ref{fig:integrand})
+When $t\gg \tau_0$, different regimes emerge. $F(y)$ has a sharp behavior for $y_\pm^*\simeq \pm 1$. Actually, it diverges when $y\to\pm 1$ if $g=0$. In order to take into account this contribution, we can approximate $F(y)$ by $F(y)|_{g=0}$ (see blue, dashed curve of Fig. \ref{fig:integrand})
 \begin{equation}
 c_1^\text{s}(t)\simeq \frac{4g^2}{\pi J^2}\int_{-1}^1 dy \frac{e^{i2yJt}}{4\sqrt{1-y^2}((\Delta-\epsilon)/J+2y)^2}.
 \end{equation}
-If $2\Delta y_\pm Jt\ll 1$ the oscillatory term $e^{i2yJt}$ will not be sensitive to the difference between $F(y)$ and $F(y)|_{g=0}$ when $y$ is close to the edges and the approximation will work. As we are concerned in the contribution around $\pm 1$, we can approximate the integral as:
+If $2\Delta y_\pm Jt\ll 1$, with $\Delta y_\pm=|y_\pm^*\mp 1|$ (already defined in the main text), the oscillatory term $e^{i2yJt}$ will not be sensitive to the difference between $F(y)$ and $F(y)|_{g=0}$ when $y$ is close to the edges and the approximation will work. As we are concerned in the contribution around $\pm 1$, we can approximate the integral as:
 \begin{align}
 c_1^\text{s}(t)  \simeq \frac{4g^2}{\sqrt{2}\pi J^2}&\left(\frac{J^2}{(\Delta-\epsilon-2J)^2}\int_{-1}^\infty dy \frac{e^{i2yJt}}{4\sqrt{1+y}}\right. \\
 & \left.+ \frac{J^2}{(\Delta-\epsilon+2J)^2}\int_{-\infty}^1 dy \frac{e^{i2yJt}}{4\sqrt{1-y}}\right).\nonumber
@@ -426,13 +421,14 @@ These integrals are analytical
 \begin{equation}
 c_1^\text{s}(t)\simeq \frac{g^2}{2\sqrt{2\pi Jt}}\left(\frac{e^{-i2Jt}}{(\Delta-\epsilon-2J)^2}+\frac{e^{i2Jt}}{(\Delta-\epsilon+2J)^2}\right).\label{eq:csc_1}
 \end{equation}
-Then, $P_1^\text{s}(t)$ decays with $(Jt)^{-1}$ after the initial exponential decay if $\tau_0\ll t\ll \tau_{1,\pm}$, with $\tau_{1,\pm}:=(4|\Delta y_\pm|)^{-1}$. We can rewrite the last expression by adding the decaying exponentials with $\tau_{1,\pm}$:
-\begin{equation}
-c_1^\text{s}(t)\simeq \frac{g^2}{2\sqrt{2\pi Jt}}\left(\frac{e^{-i2Jt}e^{-\frac{t}{2\tau_{1,-}}}}{(\Delta-\epsilon-2J)^2}+\frac{e^{i2Jt}e^{-\frac{t}{2\tau_{1,+}}}}{(\Delta-\epsilon+2J)^2}\right).
-\end{equation}
-In the case of the Fig. \ref{fig:qubit_dynamics}, $\Delta-\epsilon=0$, thus $\tau_1:=\tau_{1,+}=\tau_{1,-}$.
+Then, $P_1^\text{s}(t)$ decays with $(Jt)^{-1}$ after the initial exponential decay if $\tau_0\ll t\ll \tau_{1,\pm}$, with $\tau_{1,\pm} = (4|\Delta y_\pm|)^{-1}$. We can rewrite the last expression by adding the decaying exponentials with $\tau_{1,\pm}$:
+\begin{align}
+c_1^\text{s}(t)\simeq \frac{g^2}{2\sqrt{2\pi Jt}}&\left(\frac{e^{-i2Jt}}{(\Delta-\epsilon-2J)^2} e^{-t/2\tau_{1,-}}\right. \nonumber \\
+&\left. +\frac{e^{i2Jt}}{(\Delta-\epsilon+2J)^2} e^{-t/2\tau_{1,+}} \right).
+\end{align}
+In the case of the Fig. \ref{fig:qubit_dynamics}, $\Delta-\epsilon=0$, thus $\tau_{1,+}=\tau_{1,-}$.
 
-Finally, if $t\gg \tau_0,\tau_{1,\pm}$, the only surviving contributions will be due to the singularities of $F(y)$ because the oscillating term $e^{i2yJt}$ smears out any soft part of the kernel. $F(y)$ is singular at $y=\pm 1$. Then, we can approximate the kernel by any function which behaves as $F(y)$ when $y=\pm 1$. We consider the function $G(y)$ (see Fig. \ref{fig:integrand}, black, dotted curve)
+Finally, if $t\gg \tau_0,\tau_{1,\pm}$, the only surviving contributions will be due to the singularities of $F(y)$ because the rapidly oscillating term $e^{i2yJt}$ cancels out the integrated contribution of any smooth part of the kernel. $F(y)$ is singular at $y=\pm 1$. Then, we can approximate the kernel by any function which behaves as $F(y)$ when $y=\pm 1$. We consider the function $G(y)$ (see Fig. \ref{fig:integrand}, black, dotted curve)
 \begin{equation}
 G(y)=\frac{\sqrt{1-y^2}}{(g/J)^4}.\label{eq:G}
 \end{equation}
@@ -454,7 +450,7 @@ being $J_1$ the first kind Bessel function with $n=1$. As $t\to\infty$, $J_1(2Jt
 %As said in the main text, the qubit dynamics is not the typical exponential decay. In this appendix, we argument why this dynamics is, in addition, non-Markovian.\newline
 %
 %\begin{figure}[thb!]
-%\includegraphics[width=1.0\columnwidth]{Gamma_qb_Delta=0,80_g=0,30.pdf}
+%\includegraphics[width=1.0\columnwidth]{../Figures/Gamma_qb_Delta=0,80_g=0,30.pdf}
 %\caption{{\bf Qubit dynamics.} $\Gamma$ for $\Delta=0.80$ and $g=0.30$ in logarithmic scale.}\label{fig:Gamma}
 %\end{figure}
 %
